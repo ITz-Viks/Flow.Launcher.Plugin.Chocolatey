@@ -6,7 +6,7 @@
 
 Search, install, update and uninstall [Chocolatey](https://chocolatey.org) packages without leaving [Flow Launcher](https://www.flowlauncher.com).
 
-<img src="assets/search.png" width="560" alt="Searching for firefox: logos, versions, approval badges and download counts">
+<img src="assets/search.png" width="606" alt="Searching for firefox: logos, versions, approval badges and download counts">
 
 </div>
 
@@ -32,16 +32,18 @@ Or download the zip from [Releases](https://github.com/ITz-Viks/Flow.Launcher.Pl
 
 **F1** opens the details pane. **Right click** a package for install/upgrade, uninstall and its package page.
 
-<table>
-<tr>
-<td width="50%"><img src="assets/update.png" alt="choco update lists only outdated packages"><br><sub>Only what needs updating</sub></td>
-<td width="50%"><img src="assets/preview.png" alt="F1 details pane"><br><sub>Details pane (F1)</sub></td>
-</tr>
-<tr>
-<td><img src="assets/progress.png" alt="Progress card"><br><sub>Installs run hidden behind a small progress card, with Cancel</sub></td>
-<td><img src="assets/terminal.png" alt="Progress card with terminal output"><br><sub>Full choco output one click away</sub></td>
-</tr>
-</table>
+<div align="center">
+
+<img src="assets/update.png" width="606" alt="choco update lists only outdated packages"><br>
+<sub>Only what needs updating</sub>
+
+<img src="assets/preview.png" width="606" alt="F1 details pane"><br>
+<sub>Details pane (F1)</sub>
+
+<img src="assets/progress.png" width="400" alt="Progress card"> <img src="assets/terminal.png" width="400" alt="Progress card with terminal output"><br>
+<sub>Installs run hidden behind a small progress card with Cancel; the full choco output is one click away</sub>
+
+</div>
 
 ### Safety
 
@@ -51,7 +53,7 @@ Or download the zip from [Releases](https://github.com/ITz-Viks/Flow.Launcher.Pl
 
 ## Settings
 
-<img src="assets/settings.png" width="520" alt="Plugin settings">
+<img src="assets/settings.png" width="667" alt="Plugin settings">
 
 - **Package sources**: the community repository (default, fastest) or every source configured in Chocolatey, including private feeds and local folders.
 - **Background update check**: off by default. Notifies you or updates automatically, for all packages, all except some, or only the ones you tick.
