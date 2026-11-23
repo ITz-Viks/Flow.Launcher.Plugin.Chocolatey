@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Flow.Launcher.Plugin.Choco</AssemblyName>
+    <RootNamespace>Flow.Launcher.Plugin.Choco</RootNamespace>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Flow ships this assembly itself; compile against it, never copy it -->
+    <PackageReference Include="Flow.Launcher.Plugin" Version="5.0.0" ExcludeAssets="runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="plugin.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="Images\**" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="Languages\**" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <!-- dotnet build -c Release  ->  out\  +  Chocolatey-<version>.zip ready for Flow -->
+  <Target Name="Package" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <ZipDirectory SourceDirectory="$(OutDir)" DestinationFile="$(MSBuildProjectDirectory)\Flow.Launcher.Plugin.Chocolatey.zip" Overwrite="true" />
+  </Target>
+</Project>

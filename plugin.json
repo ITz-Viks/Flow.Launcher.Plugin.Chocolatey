@@ -1,0 +1,13 @@
+{
+  "ID": "7792d7c8-f979-4b62-aa64-2342777a7aef",
+  "ActionKeyword": "choco",
+  "Name": "Chocolatey",
+  "Description": "Search, install, update and uninstall Chocolatey packages",
+  "Author": "ITzViks",
+  "Version": "1.3.0",
+  "Language": "csharp",
+  "Website": "https://github.com/ITz-Viks/Flow.Launcher.Plugin.Chocolatey",
+  "IcoPath": "Images\\icon.png",
+  "ExecuteFileName": "Flow.Launcher.Plugin.Choco.dll",
+  "MinimumAppVersion": "2.0.0"
+}

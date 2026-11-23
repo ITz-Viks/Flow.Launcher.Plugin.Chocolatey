@@ -1,0 +1,116 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="flowlauncher_plugin_choco_plugin_name" xml:space="preserve">Chocolatey</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_plugin_description" xml:space="preserve">Search, install, update and uninstall Chocolatey packages</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_error" xml:space="preserve">Chocolatey error</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_not_installed" xml:space="preserve">Chocolatey is not installed</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_not_installed_sub" xml:space="preserve">Press Enter to install it with winget (asks for admin permission)</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_install" xml:space="preserve">Install</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_install_sub" xml:space="preserve">Search the community repository</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_update" xml:space="preserve">Update</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_checking_updates" xml:space="preserve">Checking for updates…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_updates_available" xml:space="preserve">{0} update(s) available</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_uninstall" xml:space="preserve">Uninstall</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_installed_count" xml:space="preserve">{0} installed packages</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_type_name" xml:space="preserve">Type a package name</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_type_name_sub" xml:space="preserve">Searches community.chocolatey.org</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_installed" xml:space="preserve">installed</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_installed_update" xml:space="preserve">installed v{0} → update</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_downloads" xml:space="preserve">{0} downloads</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_confirm_install_title" xml:space="preserve">Install {0}?</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_confirm_install" xml:space="preserve">{0} is not approved by the Chocolatey moderators (status: {1}).&#10;&#10;Install it anyway?</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_up_to_date" xml:space="preserve">Everything is up to date</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_no_matching_updates" xml:space="preserve">No matching updates</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_checked_at" xml:space="preserve">Checked at {0} · Enter to check again</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_upgrade_all" xml:space="preserve">Upgrade all ({0})</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_enter_uninstall" xml:space="preserve">Enter to uninstall</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_confirm_uninstall_title" xml:space="preserve">Uninstall {0}?</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_confirm_uninstall" xml:space="preserve">Uninstall {0} v{1}?</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_approved" xml:space="preserve">Approved</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_unsafe_id" xml:space="preserve">Refusing unsafe package id</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_ctx_upgrade" xml:space="preserve">Upgrade</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_ctx_install" xml:space="preserve">Install</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_ctx_uninstall" xml:space="preserve">Uninstall</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_ctx_open_page" xml:space="preserve">Open package page</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_all_packages" xml:space="preserve">all packages</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_title_install" xml:space="preserve">Installing {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_title_upgrade" xml:space="preserve">Upgrading {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_title_uninstall" xml:space="preserve">Uninstalling {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_done_install" xml:space="preserve">Installed {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_done_upgrade" xml:space="preserve">Upgraded {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_done_uninstall" xml:space="preserve">Uninstalled {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_failed_install" xml:space="preserve">Installing {0} failed</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_failed_upgrade" xml:space="preserve">Upgrading {0} failed</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_failed_uninstall" xml:space="preserve">Uninstalling {0} failed</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_terminal" xml:space="preserve">Terminal</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_queued" xml:space="preserve">Waiting for the previous choco task…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_uac" xml:space="preserve">Waiting for admin permission…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_uac_declined" xml:space="preserve">Cancelled: admin permission was declined</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_starting" xml:space="preserve">Starting choco…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_summary" xml:space="preserve">{0}/{1} packages done</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_reboot_required" xml:space="preserve">reboot required</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_failed_exit" xml:space="preserve">Failed (exit {0}). See terminal for details</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_failed" xml:space="preserve">Failed. See terminal for details</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_pkg_download" xml:space="preserve">Downloading package {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_file_download" xml:space="preserve">Downloading installer {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_verifying" xml:space="preserve">Verifying checksum…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_downloading" xml:space="preserve">Downloading {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_upgrading_from" xml:space="preserve">Upgrading {0} {1} → {2}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_installing" xml:space="preserve">Installing…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_upgrading" xml:space="preserve">Upgrading…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_uninstalling" xml:space="preserve">Uninstalling…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_installing_pkg" xml:space="preserve">Installing {0}…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_extracting" xml:space="preserve">Extracting…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_running_uninstaller" xml:space="preserve">Running uninstaller…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_done_installed" xml:space="preserve">{0} installed</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_done_uninstalled" xml:space="preserve">{0} uninstalled</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_done_upgraded" xml:space="preserve">{0} upgraded</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_cancel" xml:space="preserve">Cancel</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_stage_cancelling" xml:space="preserve">Cancelling…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_cancelled" xml:space="preserve">Cancelled</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_title_setup" xml:space="preserve">Installing {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_done_setup" xml:space="preserve">Installed {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_failed_setup" xml:space="preserve">Installing {0} failed</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_export" xml:space="preserve">Export</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_export_sub" xml:space="preserve">Save the list of installed packages (packages.config)</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_export_done" xml:space="preserve">Exported {0} packages to {1}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_import" xml:space="preserve">Import</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_import_sub" xml:space="preserve">Install packages from a packages.config file</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_import_pick" xml:space="preserve">Choose a packages.config file…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_import_missing" xml:space="preserve">Install all missing ({0})</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_import_none" xml:space="preserve">Everything in this file is already installed</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_import_bad_file" xml:space="preserve">Could not read {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_import_enter" xml:space="preserve">Enter to install</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_confirm_install_many" xml:space="preserve">These packages are not approved by the Chocolatey moderators:&#10;{0}&#10;&#10;Install anyway?</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_source_label" xml:space="preserve">source: {0}</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_preview_loading" xml:space="preserve">Loading details…</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_preview_failed" xml:space="preserve">Could not load details</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_preview_unavailable" xml:space="preserve">No details available for this source</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_preview_published" xml:space="preserve">Published</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_preview_downloads" xml:space="preserve">Downloads</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_preview_dependencies" xml:space="preserve">Dependencies</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_preview_tests" xml:space="preserve">Automated tests</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_preview_tags" xml:space="preserve">Tags</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_preview_project" xml:space="preserve">Project website</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_preview_release_notes" xml:space="preserve">Release notes</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_preview_none" xml:space="preserve">None</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_sources" xml:space="preserve">Package sources</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_sources_community" xml:space="preserve">Community repository only (fastest)</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_sources_all" xml:space="preserve">All sources configured in Chocolatey</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_check" xml:space="preserve">Background update check</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_check_off" xml:space="preserve">Off</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_check_1" xml:space="preserve">Every hour</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_check_6" xml:space="preserve">Every 6 hours</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_check_24" xml:space="preserve">Every day</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_notify" xml:space="preserve">Notify me when updates are found</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_auto" xml:space="preserve">Install updates automatically (asks for admin permission)</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_filter" xml:space="preserve">Packages to check</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_filter_exclude" xml:space="preserve">All packages except the ones ticked below</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_set_filter_include" xml:space="preserve">Only the packages ticked below</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_notify_title" xml:space="preserve">{0} Chocolatey update(s) available</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_notify_button" xml:space="preserve">Show updates</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_retry_ignore_checksums" xml:space="preserve">Retry without checksum check</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_checksum_warning" xml:space="preserve">The download doesn't match its checksum. Usually the vendor just updated the file, but it could also have been tampered with. Only skip the check if you trust the source.</system:String>
+    <system:String x:Key="flowlauncher_plugin_choco_open_folder" xml:space="preserve">Open folder</system:String>
+</ResourceDictionary>
